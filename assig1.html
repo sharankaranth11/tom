@@ -1,0 +1,65 @@
+	<html>
+<head>
+	<style>
+		body
+		{
+			height: 350px;
+			width: 600px;	
+		}
+        
+		th, tr
+        {   border:1px solid black;
+            text-align: center;  
+            background-color: palevioletred;
+            border:3px solid black;
+            font-size: 20px;
+			width:300px;
+			height: 50px;
+			font-family:cursive;
+        }
+			
+        td{
+            border:1px solid black;
+        }
+		
+		.items
+		{
+		margin-left:30px;
+		}
+		
+		input{
+		width: 250px;
+		height: 30px;
+		}
+	</style>
+</head>
+	
+<body>
+	<form method=post action="assign1.php" >
+	
+	<table align=center class="items"> <br>
+	
+	<tr><th colspan><h2>THE MART</h2> </th></tr>
+	
+	
+	<tr> <td> <b> BILL NUMBER</b></td>  <br>
+	<tr><td><input type=text name=tableno ></td></tr>
+	
+	
+	<tr> <td><b> Items ordered</b> <br>(seperate no of item with '-'eg:sugar-tea)  </td>  
+        <tr><td><input type=text name=items > 
+
+	<tr> <td><b>  price</b> <br>(per one)(seperated with '-')  </td>  
+        <tr><td><input type=text name=prices > 
+	
+	<tr> <td> <b> Quantity ordered</b> <br>(seperated with '-')  </td>
+        <tr><td><input type=text name=quantity > 
+
+	<tr> <td>
+	<input type=submit > </td> <br>
+	 <tr><td><input type=reset>
+	</td></tr>
+</table>
+</form>
+</body>
+</html>
